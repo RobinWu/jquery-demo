@@ -1,0 +1,49 @@
+/* Demo Page */
+body {
+	font: 12px "Lucida Grande", Helvetica, Verdana, sans-serif;
+	background-color: #F0F0F0;
+	color: white;
+	font-size: 80%;
+}
+a {
+	color: black;
+}
+
+#container {
+	width: 700px;
+	margin:0 auto;
+	color: white;
+}
+#top {
+	width: auto;
+	background-color:#0099FF;
+	padding: 10px;
+}
+#left {
+	float: left;
+	background-color:#CC9933;
+	width: 180px;
+	height: 380px;
+	padding: 10px;
+
+}
+#content {
+	float: left;
+	background-color:#993300;
+	width: 480px;
+	height: 380px;
+	padding: 10px;
+}
+#inside, #inside2 {
+	background-color: #808080;
+	width: auto;
+	padding: 10px;
+	z-index:100;
+}
+#content2 {
+	float: left;
+	background-color:green;
+	width: 680px;
+	height: 380px;
+	padding: 10px;
+}

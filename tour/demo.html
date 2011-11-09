@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>jQuery Highlighter Demonstration</title>
+        <link href="./src/jquery.highlighter.css" rel="stylesheet" type="text/css">
+        <link href="./src/demo1.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./src/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="./src/jquery.highlighter.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() { $(".jhighlight").jhighlight({ description: true, }); });
+        </script>
+    </head>
+    <body>
+        <!-- Hightlight Control Panel-->
+        <div id="control">
+            <a href="#" title="top" class="jhighlight" rel="&lt;h1&gt;Top Container&lt;/h1&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.">1</a>
+            <a href="#" title="left" class="jhighlight" rel="&lt;h1&gt;Left Container&lt;/h1&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">2</a>
+            <a href="#" title="content" class="jhighlight" rel="&lt;h1&gt;Content Area&lt;/h1&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">3</a>
+            <a href="#" title="inside" class="jhighlight" rel="&lt;h1&gt;Inside&lt;/h1&gt;Lorem ipsum dolor si.">4</a>
+            <a href="#" title="content2" class="jhighlight" rel="&lt;h1&gt;Inside&lt;/h1&gt;Lorem ipsum dolor si.">5</a>
+            <a href="#" title="inside2" class="jhighlight">6</a>
+            <a href="#" id="close"> close </a>
+        </div>
+
+        <!-- Website-->
+        <div id="container">
+            <div id="top">
+                <h1>Top Container</h1>
+            </div>
+            <div id="left">
+                <h1>left</h1>
+            </div>
+            <div id="content">
+                <h1>Content</h1>
+                <div id="inside">
+                    <h1>Inside</h1>
+                </div>
+            </div>
+            <div id="content2">
+                <h1>Content2</h1>
+                <div id="inside2">
+                    <h1>Inside2</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
