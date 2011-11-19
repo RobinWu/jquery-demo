@@ -1,0 +1,169 @@
+/* page layout */
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    color:#fff;
+    font:14px/1.3 Arial,sans-serif;
+    background:transparent url(../images/bg.gif) repeat top left;
+}
+footer {
+    background-color:#212121;
+    bottom:0;
+    box-shadow: 0 -1px 2px #111111;
+    -moz-box-shadow: 0 -1px 2px #111111;
+    -webkit-box-shadow: 0 -1px 2px #111111;
+    display:block;
+    height:70px;
+    left:0;
+    position:fixed;
+    width:100%;
+    z-index:100;
+}
+footer h2{
+    font-size:22px;
+    font-weight:normal;
+    left:50%;
+    margin-left:-400px;
+    padding:22px 0;
+    position:absolute;
+    width:540px;
+}
+footer a.stuts,a.stuts:visited{
+    border:none;
+    text-decoration:none;
+    color:#fcfcfc;
+    font-size:14px;
+    left:50%;
+    line-height:31px;
+    margin:23px 0 0 110px;
+    position:absolute;
+    top:0;
+}
+footer .stuts span {
+    font-size:22px;
+    font-weight:bold;
+    margin-left:5px;
+}
+.container {
+    margin:20px auto;
+    position:relative;
+    width:640px;
+}
+
+.nav {
+    background-color:#DDD;
+    list-style:none outside none;
+    overflow:hidden;
+    padding:5px 140px;
+}
+.nav li {
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+
+    border:2px outset #000000;
+    color:#000;
+    cursor:pointer;
+    float:left;
+    font-size:18px;
+    font-weight:bold;
+    margin-right:5px;
+    padding:10px;
+}
+
+.demos {
+    background-color:#DDD;
+    list-style:none outside none;
+    overflow:hidden;
+    padding:5px 165px;
+}
+.demos li {
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+
+    border:2px outset #000000;
+    color:#000;
+    float:left;
+    font-size:18px;
+    font-weight:bold;
+    margin-right:5px;
+    padding:10px;
+}
+.demos li a {
+    color:#000;
+    cursor:pointer;
+    display:block;
+    font-size:20px;
+    font-weight:bold;
+    height:30px;
+    line-height:30px;
+    text-decoration:none;
+}
+
+.grid {
+    background-color:#DDD;
+    list-style:none outside none;
+    width:100%;
+}
+.grid li {
+    border:1px solid #777777;
+    float:left;
+    height:240px;
+    width:211px;
+
+    transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    -webkit-transition:all 0.5s linear;
+}
+.grid li div {
+    transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+
+    float:left;
+}
+.grid li .d1 {
+    background:transparent url(../images/grid1.jpg) no-repeat top left;
+    height:240px;
+    width:100%;
+}
+.grid li .d2 {
+    background:transparent url(../images/grid2.jpg) no-repeat top left;
+    height:0;
+    width:100%;
+}
+.grid li .d3 {
+    background:transparent url(../images/grid3.jpg) no-repeat top left;
+    height:0;
+    width:100%;
+}
+.grid li .d4 {
+    background:transparent url(../images/grid4.jpg) no-repeat top left;
+    height:0;
+    width:100%;
+}
+.grid li .d5 {
+    background:transparent url(../images/grid5.jpg) no-repeat top left;
+    height:0;
+    width:100%;
+}
+.grid li#g2 div {
+    background-position:-211px 0;
+}
+.grid li#g3 div {
+    background-position:-422px 0;
+}
+.grid li#g4 div {
+    background-position:0 -240px;
+}
+.grid li#g5 div {
+    background-position:-211px -240px;
+}
+.grid li#g6 div {
+    background-position:-422px -240px;
+}
