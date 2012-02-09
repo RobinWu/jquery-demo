@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="gb2312" />
+        <title>FullScreen Demo: GBin1.com</title>
+		
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/jquery.fullscreen.js" type="text/javascript"></script>		
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		
+		<script>
+		jQuery(document).ready(function($){
+			if($.support.fullscreen){
+				$('#fullscreen').click(function(e){
+					$('#content').fullScreen();
+					e.preventDefault();
+				});
+			}
+		});	
+		</script>		
+	<style type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		line-height: 1.8em;
+		background: #fff;
+	}
+	* {margin: 0; padding: 0;}
+	#content {
+		background: #E3E3E3;
+		margin: 0 auto;
+		padding: 25px 40px;
+		overflow: hidden;
+		font-size: 1.2em;
+		width: 800px;
+	}
+	#content p,pre {
+		margin: 15px 0;
+		padding: 15px 0;
+		font-family: Arial;
+	}
+	h2,h3 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold;}
+	h2 {font-size: 36px; margin-bottom: 12px;}
+	h3 {font-size: 30px; margin-bottom: 10px;}
+
+	</style>
+    </head>
+
+<body>
+     <section id="content">
+		<h2>Fullscreen demo for Firefox, Chrome</h2> 
+		
+		<p>
+			<a href="#" id="fullscreen"><img src="img/fullscreen.png" alt="fullscreen"></a>
+		</p>
+		
+		<h3>JavaScript</h3>
+		<pre>
+		jQuery(document).ready(function($){
+			if($.support.fullscreen){
+				$('#fullscreen').click(function(e){
+					$('#content').fullScreen();
+					e.preventDefault();
+				});
+			}
+		});	
+		</pre>
+		
+		<h3>HTML</h3>
+		<pre>
+             &lt;section id=&quot;content&quot;&gt;<br />                JavaScript<br />                &lt;pre&gt;<br />                jQuery(document).ready(function($){<br />                    if($.support.fullscreen){<br />                        $('#fullscreen').click(function(e){<br />                            $('#content').fullScreen();<br />                            e.preventDefault();<br />                        });<br />                    }<br />                });    <br />                &lt;/pre&gt;<br />                <br />                HTML<br />                &lt;pre&gt;<br />                jQuery(document).ready(function($){<br />                    if($.support.fullscreen){<br />                        $('#fullscreen').click(function(e){<br />                            $('#content').fullScreen();<br />                            e.preventDefault();<br />                        });<br />                    }<br />                });    <br />                &lt;/pre&gt;        <br />                &lt;a href=&quot;#&quot; id=&quot;fullscreen&quot;&gt;fullscreen&lt;/a&gt;<br />             &lt;/section&gt;<br /> 
+		</pre>		
+
+		<p style="float:right">
+			<img src="img/logo.jpg">
+		</p>		
+	 </section>
+</body>
+</html>
