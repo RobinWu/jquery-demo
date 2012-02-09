@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Reveal | Scrolling Sidebar from CSS-Tricks</title>
+	
+	<style type="text/css">
+    	* { margin: 0; padding: 0; }
+        body { font: 14px/1.4 Georgia, serif; }
+        #page-wrap { width: 600px; margin: 0 auto; position: relative; z-index: 1500; }
+        h1 { padding-top: 15px; }
+        p { margin: 0 0 15px 0; }
+        p:first-child { background: #fffcde; padding: 10px; }
+        #sidebar ul { background: #eee; padding: 10px; }
+        li { margin: 0 0 0 20px; }
+        #main { width: 390px; float: left; }
+        #sidebar { width: 190px; position: fixed; left: 50%; top: -45px; margin: 0 0 0 110px; z-index: 1000; }
+        #title-area { background: white; position: relative; z-index: 3000; }
+        #reveal { position: absolute; right: 0; bottom: -20px; z-index: 2000; }
+    </style>
+    
+    <!--[if IE 6]>
+	   <style type="text/css">
+	       html, body { height: 100%; overflow: auto; }
+	       #sidebar { position: absolute; }
+	       #page-wrap { margin-top: -5px; }
+	       #ie6-wrap { position: relative; height: 100%; overflow: auto; width: 100%; }
+	   </style>
+    <![endif]-->
+    
+    <!--[if IE 7]>
+	   <style type="text/css">
+	       #page-wrap { margin-top: -5px; }
+	       #reveal { bottom: -10px; }
+	   </style>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <div id="ie6-wrap">
+
+	<div id="page-wrap">
+	
+        <div id="title-area">
+
+    		<h1>Scrolling Sidebar</h1>
+    		<p>By <a href="http://css-tricks.com"><strong>CSS</strong>-Tricks</a></p>
+    		
+    		<img src="images/reveal.png" alt="" id="reveal" />
+		
+		</div>
+		
+		<div id="main">
+		
+		  <p>Scroll down and watch the sidebar on the right follow.</p>
+		
+		  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>		
+		  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		
+		</div>
+		
+	</div>
+	
+	</div>
+	
+	<div id="sidebar">
+	
+	   <img src="images/logo.png" alt="logo" id="logo" />
+				
+	  	<ul>
+		    <li><a href="index.html">jQuery (animated)</a></li>
+		    <li><a href="css.html">CSS (fixed)</a></li>
+		    <li><a href="reveal.html">CSS (reveal)</a></li>
+		</ul>
+	
+	</div>
+		
+</body>
+
+</html>

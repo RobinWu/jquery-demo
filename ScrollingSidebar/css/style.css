@@ -1,0 +1,17 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+body { font: 14px/1.4 Georgia, serif; }
+
+#page-wrap { width: 600px; margin: 15px auto; }
+
+p { margin: 0 0 15px 0; }
+p:first-child { background: #fffcde; padding: 10px; }
+ul { background: #eee; padding: 10px; }
+li { margin: 0 0 0 20px; }
+#main { width: 390px; float: left; }
+#sidebar { width: 190px; float: right; }
