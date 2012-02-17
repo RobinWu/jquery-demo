@@ -12,6 +12,11 @@
         <link rel="stylesheet" href="jquery.mobile-1.0.1.min.css" />
         <script src="jquery-1.6.4.min.js"></script>
         <script src="jquery.mobile-1.0.1.min.js"></script>
+        <style type="text/css">
+            div.ui-content {
+                height: 360px;
+            }
+        </style>
     </head> 
     <body> 
         <!-- Start of first page: #one -->
@@ -46,16 +51,6 @@
                     <li><a href="#warehouses">查看库存</a></li>
                     <li><a href="#products">查看物料</a></li>
                 </ul>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
             </div><!-- /content -->
             <div data-role="footer">
                 <h4><a href="http://jxc.agideo.com">捷道软件</a></h4>
@@ -65,6 +60,7 @@
 
         <div data-role="page" id="warehouses">
             <div data-role="header">
+                <a href="#main" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" class="ui-btn-left">back</a>
                 <h1>选择仓库</h1>
                 <a href="#main" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
             </div><!-- /header -->
@@ -76,9 +72,6 @@
                     <li><a href="#">物料仓库</a></li>
                     <li><a href="#">赠品仓库</a></li>
                 </ul>
-                <br/>
-                <br/>
-                <br/>
             </div><!-- /content -->
             <div data-role="footer">
                 <h4><a href="http://jxc.agideo.com">捷道软件</a></h4>
@@ -102,6 +95,78 @@
                     <li><a href="#">黄铜 HNi65-5<span class="ui-li-count">12吨</span></a></li>
                     <li><a href="#">黄铜 HSn90-1<span class="ui-li-count">0.2吨</span></a></li>
                     <li><a href="#">锡青铜 QSn4-3<span class="ui-li-count">1.2吨</span></a></li>
+                </ul>
+            </div><!-- /content -->
+            <div data-role="footer">
+                <h4><a href="http://jxc.agideo.com">捷道软件</a></h4>
+            </div><!-- /footer -->
+        </div><!-- /page two -->
+
+        <div data-role="page" id="stocks">
+            <div data-role="header">
+                <a href="#chengping" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" class="ui-btn-left">back</a>
+                <h1>黄铜 H90 - 成品仓库</h1>
+                <a href="#main" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+            </div><!-- /header -->
+            <div data-role="content">
+                <ul data-role="listview">
+                    <li>仓库: 成品仓库</li>
+                    <li>编号: WL-323</li>
+                    <li>名称: 黄铜</li>
+                    <li>规格: H90</li>
+                    <li>数量: 2.5</li>
+                    <li>单位: 吨</li>
+                    <li>条码: 600030232323</li>
+                    <li>成本均价: 3446</li>
+                    <li>成本金额: 8615.00</li>
+                </ul>
+            </div><!-- /content -->
+            <div data-role="footer">
+                <h4><a href="http://jxc.agideo.com">捷道软件</a></h4>
+            </div><!-- /footer -->
+        </div><!-- /page two -->
+
+        <!-- show product info -->
+        <div data-role="page" id="products">
+            <div data-role="header">
+                <a href="#main" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" class="ui-btn-left">back</a>
+                <h1></h1>
+                <a href="#main" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+            </div><!-- /header -->
+            <div data-role="content">
+                <div style="text-align:center;"><img src="images/barcode.jpg" width="300"/></div>
+                <br/>
+                <br/>
+                <a href="#product-info" data-role="button" data-theme="e">查看</a>
+            </div><!-- /content -->
+            <div data-role="footer">
+                <h4><a href="http://jxc.agideo.com">捷道软件</a></h4>
+            </div><!-- /footer -->
+        </div><!-- /page two -->
+        <div data-role="page" id="product-info">
+            <div data-role="header">
+                <a href="#products" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" class="ui-btn-left">back</a>
+                <h1></h1>
+                <a href="#main" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+            </div><!-- /header -->
+            <div data-role="content">
+                <ul data-role="listview">
+                    <li data-role="list-divider">基本资料</li>
+                    <li>仓库: 成品仓库</li>
+                    <li>编号: WL-323</li>
+                    <li>名称: 黄铜</li>
+                    <li>规格: H90</li>
+                    <li>最小单位: 吨</li>
+                    <li data-role="list-divider">单位-吨</li>
+                    <li>单位: 吨</li>
+                    <li>比值: 1</li>
+                    <li>默认销售价格: 3446</li>
+                    <li>条码: 600030232323</li>
+                    <li data-role="list-divider">单位-公斤</li>
+                    <li>单位: 公斤</li>
+                    <li>比值: 1000</li>
+                    <li>默认销售价格: 3.5</li>
+                    <li>条码: 600030232324</li>
                 </ul>
             </div><!-- /content -->
             <div data-role="footer">
