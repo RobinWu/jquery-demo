@@ -48,6 +48,7 @@ p {
 .section h1 {
     border-bottom: 1px solid #CCC;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 .section div.image {
     float: right;
